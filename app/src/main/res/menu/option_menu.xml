@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="Ana Sayfa"
+        android:enabled="true">
+
+    </item>
+    <item android:id="@+id/addAdvert" android:title="İlan Ekle" android:enabled="true"></item>
+    <item android:id="@+id/profile" android:title="Profil" android:enabled="true"></item>
+    <item android:id="@+id/signout" android:title="Çıkış" android:enabled="true" ></item>
+</menu>

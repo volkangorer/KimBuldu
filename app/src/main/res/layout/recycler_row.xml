@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F4F0F0"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:elevation="10dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        >
+        <ImageView
+            android:background="@color/white"
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_launcher" />
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:rowCount="5"
+            android:columnCount="2">
+
+            <TextView
+                android:id="@+id/category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:text="Kategori :"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:text="Kategori :" />
+
+
+
+            <TextView
+                android:id="@+id/product2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="Eşya :"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:text="product"
+
+                />
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:text="Tarih :"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:text="date"
+                android:textSize="10dp"
+                android:paddingTop="2dp"
+
+                />
+
+
+
+
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="İlan No :"
+                android:layout_row="0"
+                android:layout_column="0">
+
+            </TextView>
+
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İlan Numarası :"
+                android:textColor="#FFC000"
+                android:id="@+id/advertNo"
+                android:layout_row="0"
+                android:layout_column="1"
+                >
+
+            </TextView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Açıklama :"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/explanation"
+                >
+
+            </TextView>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quickApply"
+            android:minHeight="0dp"
+            android:text="Başvur"
+            android:layout_gravity="center"
+            android:textSize="10dp">
+
+        </Button>
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verified"
+            android:layout_gravity="center"
+            android:src="@drawable/verified"
+            android:textSize="10dp"
+            android:elevation="5dp"
+            >
+
+        </ImageView>
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incele"
+            android:layout_gravity="center"
+            android:src="@drawable/send"
+            android:textSize="10dp"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

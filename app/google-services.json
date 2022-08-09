@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "630303754440",
+    "project_id": "kimbuldu-779ec",
+    "storage_bucket": "kimbuldu-779ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630303754440:android:a6141e263962b12d16bdfd",
+        "android_client_info": {
+          "package_name": "com.volkangorer.kimbuldu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630303754440-o3m3505o0n0lobrkntrq2qot5h69vp78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL6L-lQOsIuGH6lDpCu2P2uN1JUPckmSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630303754440-o3m3505o0n0lobrkntrq2qot5h69vp78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

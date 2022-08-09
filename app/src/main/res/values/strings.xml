@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KimBuldu</string>
+    <string-array name="category">
+        <item>Teknoloji</item>
+        <item>Para</item>
+        <item>Değerli eşya</item>
+        <item>Okul Gereçleri</item>
+        <item>Kartlar</item>
+        <item>Diğer</item>
+
+    </string-array>
+</resources>

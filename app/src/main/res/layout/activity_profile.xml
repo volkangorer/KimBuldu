@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+
+    android:background="#F4F0F0">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/BarLayout"
+        android:background="@color/purple_700"
+        android:padding="15dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoşgeldin  Kullanıcı"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@+id/nameLabel"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/notifications"
+                android:paddingHorizontal="2dp"
+
+
+
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="2dp"
+                android:src="@drawable/logout"
+                android:onClick="logOutOnClicked"
+
+                >
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="Profilim"
+                android:textColor="@color/black"
+                android:textSize="30dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mail: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/email1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="E mail"
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="İsim: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="İsim"
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telefon: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/phone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="Tel No"
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/updateProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Güncelle"
+                android:textSize="10dp">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Hareketler"
+                android:textColor="@color/black"
+                android:textSize="30dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/myAdverts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape4"
+                android:drawableRight="@drawable/goon"
+                android:onClick="myAdvertsOnClicked"
+                android:paddingVertical="3dp"
+                android:paddingLeft="10dp"
+                android:text="İlanlarım"
+                android:textColor="#1843C1"
+                android:textSize="20dp"
+
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/myApplies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape4"
+                android:drawableRight="@drawable/goon"
+                android:onClick="myAppliesOnClicked"
+                android:paddingVertical="3dp"
+                android:paddingLeft="10dp"
+                android:text="Başvurularım"
+                android:textColor="#1843C1"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/sendingMessages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape4"
+                android:drawableRight="@drawable/goon"
+                android:onClick="sendOnClicked"
+                android:paddingVertical="3dp"
+                android:paddingLeft="10dp"
+                android:text="Gönderilen İleti"
+                android:textColor="#1843C1"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/gettingMessages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape4"
+                android:drawableRight="@drawable/goon"
+                android:onClick="getOnClicked"
+                android:paddingVertical="3dp"
+                android:paddingLeft="10dp"
+                android:text="Gelen İleti"
+                android:textColor="#1843C1"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/logOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape4"
+                android:drawableRight="@drawable/goon"
+                android:onClick="logOutOnClicked"
+                android:paddingVertical="3dp"
+                android:paddingLeft="10dp"
+                android:text="Çıkış Yap"
+                android:textColor="#1843C1"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="homeOnClicked"
+            android:src="@drawable/home"
+
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="addOnClicked"
+            android:src="@drawable/add">
+
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="profileOnClicked"
+            android:src="@drawable/profile"
+
+            >
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

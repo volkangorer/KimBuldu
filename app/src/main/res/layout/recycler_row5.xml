@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    android:elevation="10dp"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20dp"
+        android:id="@+id/name2"
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number"
+        android:textSize="20dp"
+        android:id="@+id/phoneNumber2"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E Mail"
+        android:textSize="20dp"
+        android:id="@+id/eMail2"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru1"
+            android:id="@+id/q4"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cevap1"
+            android:id="@+id/a4"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru1"
+            android:id="@+id/q5"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru1"
+            android:id="@+id/a5"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru1"
+            android:id="@+id/q6"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru1"
+            android:id="@+id/a6"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Detail"
+            android:id="@+id/detail"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:layout_marginHorizontal="5dp"
+            android:minHeight="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mesaj AT"
+            android:textSize="12dp"
+            android:id="@+id/sendMessage"
+            >
+
+        </Button>
+        <Button
+            android:layout_marginHorizontal="5dp"
+            android:minHeight="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onayla"
+            android:textSize="12dp"
+            android:id="@+id/approved"
+            >
+
+        </Button>
+        <Button
+            android:layout_marginHorizontal="5dp"
+            android:minHeight="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reddet"
+            android:textSize="12dp"
+            android:id="@+id/rejected"
+            ></Button>
+    </LinearLayout>
+
+</LinearLayout>
